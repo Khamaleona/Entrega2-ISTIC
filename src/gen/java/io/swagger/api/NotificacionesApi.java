@@ -32,7 +32,7 @@ import javax.validation.constraints.*;
 
 
 @io.swagger.annotations.Api(description = "the notificaciones API")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-24T16:15:32.236Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-24T17:02:48.240Z[GMT]")
 
 public class NotificacionesApi  {
    private final NotificacionesApiService delegate;
@@ -70,13 +70,13 @@ public class NotificacionesApi  {
         @io.swagger.annotations.ApiResponse(code = 400, message = "Los valores introducidos no son correctos", response = Object.class) })
     public Response actualizarNotificacion(@ApiParam(value = "Identificador del usuario",required=true) @QueryParam("usuarioId") String usuarioId
 ,@ApiParam(value = "Identificador de la notificacion",required=true) @QueryParam("notificacionId") String notificacionId
-,@ApiParam(value = "gravedad de la notificacion") @QueryParam("tipo") String tipo
+,@ApiParam(value = "Identificador de la alerta") @QueryParam("alertaId") String alertaId
 ,@ApiParam(value = "fecha de la notificacion") @QueryParam("fecha") Date fecha
 ,@ApiParam(value = "Estado de la alerta", allowableValues="esperando, enviada") @QueryParam("estado") String estado
 ,@ApiParam(value = "destinatario de la notificacion") @QueryParam("destinatario") String destinatario
 ,@Context SecurityContext securityContext)
     throws NotFoundException {
-        return delegate.actualizarNotificacion(usuarioId,notificacionId,tipo,fecha,estado,destinatario,securityContext);
+        return delegate.actualizarNotificacion(usuarioId,notificacionId,alertaId,fecha,estado,destinatario,securityContext);
     }
 
     @DELETE
@@ -99,16 +99,16 @@ public class NotificacionesApi  {
     
     
     @Produces({ "text/plain" })
-    @io.swagger.annotations.ApiOperation(value = "Envía una nueva notificación de alerta", notes = "Envía una nueva notificación de alerta", response = String.class, tags={  })
+    @io.swagger.annotations.ApiOperation(value = "Crea una nueva notificación de alerta", notes = "Crea una nueva notificación de alerta", response = String.class, tags={  })
     @io.swagger.annotations.ApiResponses(value = { 
-        @io.swagger.annotations.ApiResponse(code = 200, message = "Notificación enviada correctamente", response = String.class),
+        @io.swagger.annotations.ApiResponse(code = 200, message = "Notificación creada correctamente", response = String.class),
         
         @io.swagger.annotations.ApiResponse(code = 404, message = "", response = Void.class) })
-    public Response enviarNotificacion(@ApiParam(value = "Identificador del usuario",required=true) @QueryParam("usuarioId") String usuarioId
+    public Response crearNotificacion(@ApiParam(value = "Identificador del usuario",required=true) @QueryParam("usuarioId") String usuarioId
 ,@ApiParam(value = "Identificador de la alerta que va a enviarse",required=true) @QueryParam("alertaId") String alertaId
 ,@Context SecurityContext securityContext)
     throws NotFoundException {
-        return delegate.enviarNotificacion(usuarioId,alertaId,securityContext);
+        return delegate.crearNotificacion(usuarioId,alertaId,securityContext);
     }
 
     @GET
@@ -126,4 +126,4 @@ public class NotificacionesApi  {
         return delegate.obtenerNotificaciones(usuarioId,securityContext);
     }
 
-} 
+}

@@ -32,4 +32,4 @@ public class JacksonJsonProvider extends JacksonJaxbJsonProvider {
 
         setMapper(objectMapper);
     }
-} 
+}
