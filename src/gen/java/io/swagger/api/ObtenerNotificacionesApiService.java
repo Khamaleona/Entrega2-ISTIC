@@ -18,7 +18,7 @@ import javax.ws.rs.core.SecurityContext;
 
 import javax.validation.constraints.*;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-23T18:08:58.527Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-24T13:08:53.384Z[GMT]")
 
 public abstract class ObtenerNotificacionesApiService {
     
