@@ -75,7 +75,6 @@ public class NotificacionesApiServiceImpl extends NotificacionesApiService {
     @Override
     public Response crearNotificacion( @NotNull String usuarioId,  @NotNull String alertaId, SecurityContext securityContext) throws NotFoundException {
 
-        boolean flag = false;
         String notificacionId = String.valueOf(notificaciones.size()-1);
 
         Notificacion notificacion = new Notificacion(usuarioId, alertaId, notificacionId);
