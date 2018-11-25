@@ -1,0 +1,13 @@
+/projects/Entrega2-ISTIC/src/gen/java/io/swagger/api/ApiException.java
+/projects/Entrega2-ISTIC/src/gen/java/io/swagger/api/NotFoundException.java
+/projects/Entrega2-ISTIC/src/gen/java/io/swagger/api/NotificacionesApi.java
+/projects/Entrega2-ISTIC/src/gen/java/io/swagger/api/StringUtil.java
+/projects/Entrega2-ISTIC/src/main/java/io/swagger/api/impl/NotificacionesApiServiceImpl.java
+/projects/Entrega2-ISTIC/src/gen/java/io/swagger/api/NotificacionesApiService.java
+/projects/Entrega2-ISTIC/src/gen/java/io/swagger/api/ApiResponseMessage.java
+/projects/Entrega2-ISTIC/src/main/java/io/swagger/api/Entities/Notificacion.java
+/projects/Entrega2-ISTIC/src/gen/java/io/swagger/api/RFC3339DateFormat.java
+/projects/Entrega2-ISTIC/src/gen/java/io/swagger/api/ApiOriginFilter.java
+/projects/Entrega2-ISTIC/src/gen/java/io/swagger/api/JacksonJsonProvider.java
+/projects/Entrega2-ISTIC/src/main/java/io/swagger/api/Bootstrap.java
+/projects/Entrega2-ISTIC/src/main/java/io/swagger/api/factories/NotificacionesApiServiceFactory.java
